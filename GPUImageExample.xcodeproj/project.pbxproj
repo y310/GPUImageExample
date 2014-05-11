@@ -21,6 +21,8 @@
 		462CAF64191F5478006EA9FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462CAF46191F5478006EA9FE /* UIKit.framework */; };
 		462CAF6C191F5478006EA9FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 462CAF6A191F5478006EA9FE /* InfoPlist.strings */; };
 		462CAF6E191F5478006EA9FE /* GPUImageExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 462CAF6D191F5478006EA9FE /* GPUImageExampleTests.m */; };
+		462CAF78191F55B9006EA9FE /* otter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 462CAF77191F55B9006EA9FE /* otter.jpg */; };
+		D59805C5F2DF4349B2BF9DEB /* libPods-GPUImageExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADA88482A064596900AFA02 /* libPods-GPUImageExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		462CAF69191F5478006EA9FE /* GPUImageExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPUImageExampleTests-Info.plist"; sourceTree = "<group>"; };
 		462CAF6B191F5478006EA9FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		462CAF6D191F5478006EA9FE /* GPUImageExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageExampleTests.m; sourceTree = "<group>"; };
+		462CAF77191F55B9006EA9FE /* otter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = otter.jpg; sourceTree = "<group>"; };
+		CF14D1EE74F44DB1B3EAE654 /* Pods-GPUImageExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageExample.xcconfig"; path = "Pods/Pods-GPUImageExample.xcconfig"; sourceTree = "<group>"; };
+		FADA88482A064596900AFA02 /* libPods-GPUImageExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImageExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 				462CAF45191F5478006EA9FE /* CoreGraphics.framework in Frameworks */,
 				462CAF47191F5478006EA9FE /* UIKit.framework in Frameworks */,
 				462CAF43191F5478006EA9FE /* Foundation.framework in Frameworks */,
+				D59805C5F2DF4349B2BF9DEB /* libPods-GPUImageExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 				462CAF67191F5478006EA9FE /* GPUImageExampleTests */,
 				462CAF41191F5478006EA9FE /* Frameworks */,
 				462CAF40191F5478006EA9FE /* Products */,
+				CF14D1EE74F44DB1B3EAE654 /* Pods-GPUImageExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,7 @@
 				462CAF44191F5478006EA9FE /* CoreGraphics.framework */,
 				462CAF46191F5478006EA9FE /* UIKit.framework */,
 				462CAF61191F5478006EA9FE /* XCTest.framework */,
+				FADA88482A064596900AFA02 /* libPods-GPUImageExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 				462CAF54191F5478006EA9FE /* Main.storyboard */,
 				462CAF57191F5478006EA9FE /* GIEViewController.h */,
 				462CAF58191F5478006EA9FE /* GIEViewController.m */,
+				462CAF77191F55B9006EA9FE /* otter.jpg */,
 				462CAF5A191F5478006EA9FE /* Images.xcassets */,
 				462CAF49191F5478006EA9FE /* Supporting Files */,
 			);
@@ -159,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 462CAF71191F5478006EA9FE /* Build configuration list for PBXNativeTarget "GPUImageExample" */;
 			buildPhases = (
+				2E207FBFC7B24EA39642733D /* Check Pods Manifest.lock */,
 				462CAF3B191F5478006EA9FE /* Sources */,
 				462CAF3C191F5478006EA9FE /* Frameworks */,
 				462CAF3D191F5478006EA9FE /* Resources */,
+				71D908DCBEF84BCDAAF3CD98 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +242,7 @@
 			files = (
 				462CAF5B191F5478006EA9FE /* Images.xcassets in Resources */,
 				462CAF4D191F5478006EA9FE /* InfoPlist.strings in Resources */,
+				462CAF78191F55B9006EA9FE /* otter.jpg in Resources */,
 				462CAF56191F5478006EA9FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +256,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E207FBFC7B24EA39642733D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71D908DCBEF84BCDAAF3CD98 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GPUImageExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		462CAF3B191F5478006EA9FE /* Sources */ = {
@@ -374,6 +419,7 @@
 		};
 		462CAF72191F5478006EA9FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF14D1EE74F44DB1B3EAE654 /* Pods-GPUImageExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +433,7 @@
 		};
 		462CAF73191F5478006EA9FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF14D1EE74F44DB1B3EAE654 /* Pods-GPUImageExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +504,7 @@
 				462CAF73191F5478006EA9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		462CAF74191F5478006EA9FE /* Build configuration list for PBXNativeTarget "GPUImageExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +513,7 @@
 				462CAF76191F5478006EA9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
